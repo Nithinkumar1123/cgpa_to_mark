@@ -40,7 +40,7 @@ function App() {
         setMarksObtained(marks);
 
         try {
-          const response = await fetch('http://localhost:5000/api/students', {
+          const response = await fetch('https://cgpa-to-mark.onrender.com/api/students', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
