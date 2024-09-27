@@ -48,7 +48,9 @@ app.post('/api/students', async (req, res) => {
     res.status(500).send('Error saving student data');
   }
 });
-
+app.get("/", (req, res) => {
+  res.send("<center> <h1>Backend in working well, for sgpa-calculator. </h1> <br> <h2>Now Start working Frontend <h2><center>");
+});
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
